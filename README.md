@@ -22,6 +22,8 @@ Le rôle principal de ce dépôt n’est pas de remplacer la documentation compl
 |---|---|
 | **Apify Actor page** | https://apify.com/travelmonitorlab/travel-monitor-launch?utm_source=github&utm_medium=docs&utm_campaign=launch_april_2026 |
 | **First success guide** | `docs/first_success_under_1_minute.md` |
+| **AI agents quickstart** | `docs/ai_agents_mcp_quickstart.md` |
+| **OpenAPI file** | `openapi/travel-monitor-launch.openapi.json` |
 | **Example payload** | `examples/demo_feed_item.json` |
 | **Annotated signal asset** | `assets/annotated_feed_item.svg` |
 | **First success visual** | `assets/annotated_first_success_flow.svg` |
@@ -57,8 +59,11 @@ travel-monitor-launch-examples/
 │   └── demo_product_offers.json
 ├── docs/
 │   ├── first_success_under_1_minute.md
+│   ├── ai_agents_mcp_quickstart.md
 │   ├── integration_scenarios.md
 │   └── outbound_payload_examples.md
+├── openapi/
+│   └── travel-monitor-launch.openapi.json
 └── assets/
     ├── annotated_feed_item.svg
     └── annotated_first_success_flow.svg
@@ -97,6 +102,31 @@ curl -H "Authorization: Bearer <YOUR_APIFY_TOKEN>" \
   -H "x-api-key: <YOUR_TRAVEL_API_KEY_IF_REQUIRED>" \
   "https://travelmonitorlab--travel-monitor-launch.apify.actor/travel/plans"
 ```
+
+## Use this with Apify, AI agents, and workflows
+
+Cette surface GitHub doit maintenant jouer un rôle très simple. Elle aide un lecteur à comprendre rapidement le produit, puis l’oriente vers la bonne porte d’entrée selon son contexte : **Apify Store** pour le premier essai, **MCP** pour les assistants IA, **OpenAPI** pour l’intégration développeur, et les exemples JSON pour la réutilisation analytique ou reporting.
+
+| Entrée | Ressource recommandée | Pourquoi c’est utile |
+|---|---|---|
+| **Premier essai humain** | Fiche Apify + `docs/first_success_under_1_minute.md` | Rejouer le chemin `/health` puis `/travel/opportunities/feed` sans friction inutile |
+| **Builders IA / MCP** | `docs/ai_agents_mcp_quickstart.md` | Comprendre l’ordre d’appel agentique et la logique health → feed → export |
+| **Développeurs API** | `openapi/travel-monitor-launch.openapi.json` | Inspecter rapidement la surface d’API et les routes disponibles |
+| **Workflows analytics / reporting** | `examples/` + `snippets/` | Réutiliser des payloads réels et des appels copiables |
+
+> The intended path stays narrow: validate the API first, retrieve one useful pricing signal second, and move to exports or automation only after the value is clear.
+
+## OpenAPI and integration assets
+
+Le dépôt expose désormais la **spécification OpenAPI** utilisée par l’Actor afin de rendre la surface plus crédible pour les intégrateurs, les reviewers techniques et les outils capables d’ingérer automatiquement un contrat d’API.
+
+| Asset | Purpose |
+|---|---|
+| `openapi/travel-monitor-launch.openapi.json` | Contrat de routes pour lecture développeur, génération client ou revue technique |
+| `snippets/health_check.sh` | Test liveness minimal |
+| `snippets/opportunities_feed.sh` | Premier appel métier démonstratif |
+| `examples/demo_opportunities_feed_response.json` | Réponse réaliste pour intégration ou comparaison |
+| `docs/ai_agents_mcp_quickstart.md` | Pont direct entre le dépôt GitHub et l’usage MCP / agents IA |
 
 ## Visual first-success flow
 
@@ -194,6 +224,8 @@ Le dépôt sera beaucoup plus efficace si le README renvoie vers quelques docume
 | Fichier compagnon | Rôle |
 |---|---|
 | `docs/first_success_under_1_minute.md` | Rendre l’essai reproductible très rapidement |
+| `docs/ai_agents_mcp_quickstart.md` | Exposer un chemin d’usage clair pour MCP et agents IA |
+| `openapi/travel-monitor-launch.openapi.json` | Donner un contrat d’API exploitable aux intégrateurs |
 | `docs/integration_scenarios.md` | Montrer comment réutiliser les sorties |
 | `docs/outbound_payload_examples.md` | Offrir une base de partage commercial claire |
 | `assets/annotated_feed_item.svg` | Fournir une preuve visuelle immédiatement compréhensible |

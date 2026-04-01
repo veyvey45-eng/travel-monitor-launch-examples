@@ -1,0 +1,282 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Travel Monitor Launch API",
+    "version": "0.4.0",
+    "description": "API privée B2B pour monitoring travel multi-client, opportunités tarifaires, bundles de livraison, administration et distribution planifiée."
+  },
+  "servers": [
+    {
+      "url": "/",
+      "description": "Serveur web embarqué de l'Actor Travel"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Vérification de santé du service",
+        "responses": {
+          "200": {
+            "description": "État de santé courant du service avec synthèse opérationnelle auto-healing"
+          }
+        }
+      }
+    },
+    "/readiness": {
+      "get": {
+        "summary": "Vérification de readiness opérationnelle",
+        "responses": {
+          "200": {
+            "description": "État de readiness, checks runtime et synthèse auto-healing du service"
+          }
+        }
+      }
+    },
+    "/travel/opportunities/top": {
+      "get": {
+        "summary": "Top Opportunities monétisables",
+        "parameters": [
+          {"name": "limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 100}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Liste priorisée des opportunités"},
+          "401": {"description": "Clé API manquante si la route est protégée en frontal"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/opportunities/feed": {
+      "get": {
+        "summary": "Feed exploitable des opportunités",
+        "parameters": [
+          {"name": "limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 250}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Feed JSON prêt à la consommation"}
+        }
+      }
+    },
+    "/travel/reports/top-opportunities": {
+      "get": {
+        "summary": "Rapport JSON Top Opportunities",
+        "parameters": [
+          {"name": "limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 100}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Rapport JSON exploitable côté client"}
+        }
+      }
+    },
+    "/travel/opportunities/feed/export.csv": {
+      "get": {
+        "summary": "Export CSV du feed opportunités",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "schema": {"type": "string"}, "required": false},
+          {"name": "limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 250}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {
+            "description": "Fichier CSV généré à la volée",
+            "content": {
+              "text/csv": {
+                "schema": {"type": "string", "format": "binary"}
+              }
+            }
+          },
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/reports/top-opportunities/export.md": {
+      "get": {
+        "summary": "Export Markdown du rapport opportunités",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "schema": {"type": "string"}, "required": false},
+          {"name": "limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 100}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {
+            "description": "Document Markdown généré à la volée",
+            "content": {
+              "text/markdown": {
+                "schema": {"type": "string"}
+              }
+            }
+          },
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/delivery/bundle": {
+      "get": {
+        "summary": "Bundle client feed + report + exports",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}},
+          {"name": "limit_feed", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 250}},
+          {"name": "limit_report", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 100}},
+          {"name": "min_score", "in": "query", "schema": {"type": "number", "minimum": 0, "maximum": 100}},
+          {"name": "focus", "in": "query", "schema": {"type": "string"}},
+          {"name": "tier", "in": "query", "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Bundle de livraison client avec manifeste, exports inline et synthèse auto-healing"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"},
+          "429": {"description": "Quota atteint"}
+        }
+      }
+    },
+    "/travel/plans": {
+      "get": {
+        "summary": "Catalogue des plans disponibles",
+        "responses": {
+          "200": {"description": "Plans d'offre disponibles pour le lancement"}
+        }
+      }
+    },
+    "/travel/admin/clients": {
+      "get": {
+        "summary": "Administration des clients privés",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Catalogue clients et paramètres d'accès"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/admin/usage": {
+      "get": {
+        "summary": "Vue d'usage agrégée",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "État d'usage journalier et mensuel par client"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/admin/overview": {
+      "get": {
+        "summary": "Vue d'ensemble opérationnelle de lancement",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Résumé opérationnel, usage, jobs, readiness et synthèse auto-healing"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/admin/healing/overview": {
+      "get": {
+        "summary": "Vue d'ensemble auto-healing",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Synthèse agrégée des diagnostics, réparations et statuts auto-healing"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/admin/healing/scenarios/{scenario_id}": {
+      "get": {
+        "summary": "Diagnostic auto-healing détaillé par scénario",
+        "parameters": [
+          {"name": "scenario_id", "in": "path", "required": true, "schema": {"type": "string"}},
+          {"name": "recent_limit", "in": "query", "schema": {"type": "integer", "minimum": 1, "maximum": 100}},
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Détail auto-healing d’un scénario avec diagnostics et journal récent"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"},
+          "404": {"description": "Scénario introuvable"}
+        }
+      }
+    },
+    "/travel/admin/delivery/jobs": {
+      "get": {
+        "summary": "Catalogue des jobs de livraison",
+        "parameters": [
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Liste des jobs récurrents configurés avec derniers statuts et métriques auto-healing"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"}
+        }
+      }
+    },
+    "/travel/admin/delivery/jobs/{job_id}/run": {
+      "post": {
+        "summary": "Déclencher manuellement un job de livraison",
+        "parameters": [
+          {"name": "job_id", "in": "path", "required": true, "schema": {"type": "string"}},
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Job exécuté avec manifeste, bundle de sortie et synthèse auto-healing"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"},
+          "404": {"description": "Job introuvable"}
+        }
+      }
+    },
+    "/travel/admin/clients/{client_id}/artifacts/latest": {
+      "get": {
+        "summary": "Derniers artefacts stockés d'un client",
+        "parameters": [
+          {"name": "client_id", "in": "path", "required": true, "schema": {"type": "string"}},
+          {"name": "x-api-key", "in": "header", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {
+          "200": {"description": "Manifeste du dernier bundle stocké pour le client"},
+          "401": {"description": "Accès privé requis"},
+          "403": {"description": "Accès refusé"},
+          "404": {"description": "Client introuvable"}
+        }
+      }
+    },
+    "/travel/product/offers": {
+      "get": {
+        "summary": "Catalogue produit commercial",
+        "responses": {
+          "200": {"description": "Description des offres produit, endpoints admin et capacités auto-healing exposées"}
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Racine de service",
+        "responses": {
+          "200": {"description": "Métadonnées générales du service Travel avec surfaces admin auto-healing publiées"}
+        }
+      }
+    }
+  }
+}
