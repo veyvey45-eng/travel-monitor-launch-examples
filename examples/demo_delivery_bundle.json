@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-03-31T10:22:19Z",
+  "delivery_manifest": {
+    "artifact_prefix": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity",
+    "artifact_count": 5,
+    "artifacts": [
+      {
+        "artifact_type": "feed_json",
+        "content_kind": "structured_feed",
+        "file_name": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity_feed.json",
+        "record_count": 2
+      },
+      {
+        "artifact_type": "feed_csv",
+        "content_kind": "flat_export",
+        "file_name": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity_feed.csv",
+        "record_count": 2
+      },
+      {
+        "artifact_type": "report_json",
+        "content_kind": "structured_report",
+        "file_name": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity_report.json",
+        "record_count": 2
+      },
+      {
+        "artifact_type": "report_markdown",
+        "content_kind": "narrative_report",
+        "file_name": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity_report.md",
+        "record_count": 2
+      },
+      {
+        "artifact_type": "healing_summary_json",
+        "content_kind": "operational_summary",
+        "file_name": "travel_demo_api_plus_api_plus_2026-03-31_booking_parity_healing_summary.json",
+        "record_count": 4
+      }
+    ]
+  },
+  "inline_export_keys": [
+    "bundle_json",
+    "feed_csv",
+    "feed_json",
+    "healing_summary_json",
+    "report_json",
+    "report_markdown"
+  ],
+  "feed_count": 2,
+  "report_opportunity_count": 2
+}

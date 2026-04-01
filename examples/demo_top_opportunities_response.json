@@ -1,0 +1,352 @@
+{
+  "generated_at": "2026-03-31T10:22:19Z",
+  "count": 3,
+  "summary": {
+    "portfolio_group_count": 3,
+    "opportunity_count": 3,
+    "average_score": 41.45,
+    "max_score": 48.82,
+    "critical_or_high_count": 0,
+    "booking_gap_count": 3,
+    "destinations": [
+      "Wooster, Ohio"
+    ],
+    "recommended_offer_mix": {
+      "parity": 2,
+      "starter": 1
+    },
+    "focus": "booking"
+  },
+  "items": [
+    {
+      "opportunity_key": "group_644c57e536983898",
+      "group_key": "group_48681ed09281992b",
+      "search_signature": "wooster-ohio|2026-04-15|2026-04-16|2|0|1|USD",
+      "destination_label": "Wooster, Ohio",
+      "checkin_date": "2026-04-15",
+      "checkout_date": "2026-04-16",
+      "entity_name": "Hampton Inn Wooster (Hotel)",
+      "match_key": "group_04b3e0e3ea5228e8",
+      "currency": "USD",
+      "site_count": 2,
+      "sites": [
+        "booking",
+        "trivago"
+      ],
+      "opportunity_type": "booking_parity_gap",
+      "best_site_name": "trivago",
+      "best_price": 136.0,
+      "worst_site_name": "booking",
+      "worst_price": 142.0,
+      "price_gap": 6.0,
+      "price_gap_percent": 4.41,
+      "booking_price": 142.0,
+      "booking_gap": 6.0,
+      "booking_gap_percent": 4.41,
+      "booking_is_above_market": true,
+      "market_leader_site": "trivago",
+      "opportunity_score": 48.82,
+      "opportunity_priority": "medium",
+      "recommended_offer_tier": "parity",
+      "commercial_summary": "Booking.com is 6.00 USD above the best observed market rate for Hampton Inn Wooster (Hotel); best visible site: trivago at 136.00 USD.",
+      "site_prices": [
+        {
+          "scenario_id": "trivago_wooster_2026_04_15_1n_2a",
+          "site_name": "trivago",
+          "entity_name": "Hampton Inn Wooster (Hotel)",
+          "entity_key": "trivago_hampton-inn-wooster_5b9feb64d8",
+          "listed_price": 136.0,
+          "currency": "USD",
+          "rank_position": 1,
+          "merchant_name": "View Deal",
+          "captured_at": "2026-03-31T10:22:19Z"
+        },
+        {
+          "scenario_id": "booking_wooster_2026_04_15_1n_2a",
+          "site_name": "booking",
+          "entity_name": "Hampton Inn Wooster",
+          "entity_key": "booking_hampton-inn-wooster_4e0e6a97b4",
+          "listed_price": 142.0,
+          "currency": "USD",
+          "rank_position": 1,
+          "merchant_name": "Booking.com",
+          "captured_at": "2026-03-31T10:22:19Z"
+        }
+      ]
+    },
+    {
+      "opportunity_key": "group_7e2c20db485675f2",
+      "group_key": "group_48681ed09281992b",
+      "search_signature": "wooster-ohio|2026-04-15|2026-04-16|2|0|1|USD",
+      "destination_label": "Wooster, Ohio",
+      "checkin_date": "2026-04-15",
+      "checkout_date": "2026-04-16",
+      "entity_name": "Best Western Plus Wooster Hotel & Conference Center",
+      "match_key": "group_ddacc3078e5ccf4a",
+      "currency": "USD",
+      "site_count": 2,
+      "sites": [
+        "booking",
+        "trivago"
+      ],
+      "opportunity_type": "booking_parity_gap",
+      "best_site_name": "trivago",
+      "best_price": 159.0,
+      "worst_site_name": "booking",
+      "worst_price": 164.0,
+      "price_gap": 5.0,
+      "price_gap_percent": 3.14,
+      "booking_price": 164.0,
+      "booking_gap": 5.0,
+      "booking_gap_percent": 3.14,
+      "booking_is_above_market": true,
+      "market_leader_site": "trivago",
+      "opportunity_score": 41.28,
+      "opportunity_priority": "medium",
+      "recommended_offer_tier": "parity",
+      "commercial_summary": "Booking.com is 5.00 USD above the best observed market rate for Best Western Plus Wooster Hotel & Conference Center; best visible site: trivago at 159.00 USD.",
+      "site_prices": [
+        {
+          "scenario_id": "trivago_wooster_2026_04_15_1n_2a",
+          "site_name": "trivago",
+          "entity_name": "Best Western Plus Wooster Hotel & Conference Center",
+          "entity_key": "trivago_best-western-plus-wooster-hotel-conference-center_e3d7d57542",
+          "listed_price": 159.0,
+          "currency": "USD",
+          "rank_position": 2,
+          "merchant_name": "trivago Book & Go",
+          "captured_at": "2026-03-31T10:22:19Z"
+        },
+        {
+          "scenario_id": "booking_wooster_2026_04_15_1n_2a",
+          "site_name": "booking",
+          "entity_name": "Best Western Plus Wooster Hotel & Conference Center",
+          "entity_key": "booking_best-western-plus-wooster-hotel-conference-center_f3abc6ad7e",
+          "listed_price": 164.0,
+          "currency": "USD",
+          "rank_position": 2,
+          "merchant_name": "Booking.com",
+          "captured_at": "2026-03-31T10:22:19Z"
+        }
+      ]
+    },
+    {
+      "opportunity_key": "group_41378e731008ef11",
+      "group_key": "group_48681ed09281992b",
+      "search_signature": "wooster-ohio|2026-04-15|2026-04-16|2|0|1|USD",
+      "destination_label": "Wooster, Ohio",
+      "checkin_date": "2026-04-15",
+      "checkout_date": "2026-04-16",
+      "entity_name": "Market Street Inn (Bed & Breakfast)",
+      "match_key": "group_3e6e946caf3a7c4b",
+      "currency": "USD",
+      "site_count": 2,
+      "sites": [
+        "booking",
+        "trivago"
+      ],
+      "opportunity_type": "booking_parity_gap",
+      "best_site_name": "trivago",
+      "best_price": 189.0,
+      "worst_site_name": "booking",
+      "worst_price": 193.0,
+      "price_gap": 4.0,
+      "price_gap_percent": 2.12,
+      "booking_price": 193.0,
+      "booking_gap": 4.0,
+      "booking_gap_percent": 2.12,
+      "booking_is_above_market": true,
+      "market_leader_site": "trivago",
+      "opportunity_score": 34.24,
+      "opportunity_priority": "low",
+      "recommended_offer_tier": "starter",
+      "commercial_summary": "Booking.com is 4.00 USD above the best observed market rate for Market Street Inn (Bed & Breakfast); best visible site: trivago at 189.00 USD.",
+      "site_prices": [
+        {
+          "scenario_id": "trivago_wooster_2026_04_15_1n_2a",
+          "site_name": "trivago",
+          "entity_name": "Market Street Inn (Bed & Breakfast)",
+          "entity_key": "trivago_market-street-inn_1d5730e056",
+          "listed_price": 189.0,
+          "currency": "USD",
+          "rank_position": 3,
+          "merchant_name": "View Deal",
+          "captured_at": "2026-03-31T10:22:19Z"
+        },
+        {
+          "scenario_id": "booking_wooster_2026_04_15_1n_2a",
+          "site_name": "booking",
+          "entity_name": "Market Street Inn",
+          "entity_key": "booking_market-street-inn_615ccbb64e",
+          "listed_price": 193.0,
+          "currency": "USD",
+          "rank_position": 3,
+          "merchant_name": "Booking.com",
+          "captured_at": "2026-03-31T10:22:19Z"
+        }
+      ]
+    }
+  ],
+  "filters": {
+    "limit": 5,
+    "min_score": 20.0,
+    "focus": "booking",
+    "tier": null
+  },
+  "access": {
+    "access_mode": "private_api_key",
+    "access_scope": "client_plan",
+    "client_id": "demo_api_plus",
+    "client_name": "Demo API Plus",
+    "plan_key": "api_plus",
+    "plan_label": "API Plus",
+    "endpoint_group": "top_opportunities",
+    "daily_quota_limit": 20,
+    "daily_quota_used": 1,
+    "daily_quota_remaining": 19,
+    "monthly_quota_limit": 200,
+    "monthly_quota_used": 1,
+    "monthly_quota_remaining": 199,
+    "usage_date": "2026-03-31",
+    "usage_month": "2026-03",
+    "key_hint": "***-key"
+  },
+  "product_catalog": {
+    "positioning": "travel_monitoring_specialized_intelligence",
+    "recommended_launch_offer": "hybrid_reports_alerts_limited_api",
+    "launch_stage": "client_ready_private_launch",
+    "private_access": {
+      "auth_mode": "x-api-key",
+      "auth_model": "per_client_api_keys",
+      "quota_window": [
+        "daily",
+        "monthly"
+      ],
+      "protected_endpoints": [
+        "/travel/opportunities/top",
+        "/travel/opportunities/feed",
+        "/travel/reports/top-opportunities",
+        "/travel/opportunities/feed/export.csv",
+        "/travel/reports/top-opportunities/export.md",
+        "/travel/delivery/bundle",
+        "/travel/admin/clients",
+        "/travel/admin/usage",
+        "/travel/admin/overview",
+        "/travel/admin/healing/overview",
+        "/travel/admin/healing/scenarios/{scenario_id}",
+        "/travel/admin/delivery/jobs",
+        "/travel/admin/delivery/jobs/{job_id}/run",
+        "/travel/admin/clients/{client_id}/artifacts/latest"
+      ],
+      "client_count": 3
+    },
+    "plan_catalog_endpoint": "/travel/plans",
+    "admin_endpoints": [
+      "/travel/admin/clients",
+      "/travel/admin/usage",
+      "/travel/admin/overview",
+      "/travel/admin/healing/overview",
+      "/travel/admin/healing/scenarios/{scenario_id}",
+      "/travel/admin/delivery/jobs",
+      "/travel/admin/delivery/jobs/{job_id}/run",
+      "/travel/admin/clients/{client_id}/artifacts/latest"
+    ],
+    "packages": [
+      {
+        "package_key": "starter",
+        "label": "Starter",
+        "target_customer": "consultants et indépendants",
+        "delivery_mode": [
+          "json",
+          "csv",
+          "markdown_report"
+        ],
+        "best_for": "veille tarifaire simple sur un portefeuille réduit",
+        "scenario_limit": 10,
+        "report_frequency": "daily",
+        "default_daily_quota": 25,
+        "default_monthly_quota": 300,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "pro",
+        "label": "Pro",
+        "target_customer": "agences, analystes, petits revenue managers",
+        "delivery_mode": [
+          "json_feed",
+          "daily_report",
+          "alerts"
+        ],
+        "best_for": "veille concurrentielle multi-scénarios avec exports récurrents",
+        "scenario_limit": 50,
+        "report_frequency": "daily",
+        "default_daily_quota": 80,
+        "default_monthly_quota": 2000,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "parity",
+        "label": "Parity",
+        "target_customer": "hôteliers et consultants distribution",
+        "delivery_mode": [
+          "parity_feed",
+          "parity_report",
+          "alerts"
+        ],
+        "best_for": "écarts OTA visibles et signaux de non-parité Booking versus marché",
+        "scenario_limit": 50,
+        "report_frequency": "daily",
+        "default_daily_quota": 60,
+        "default_monthly_quota": 1500,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "api_plus",
+        "label": "API Plus",
+        "target_customer": "intégrateurs et équipes produit",
+        "delivery_mode": [
+          "rest_api",
+          "feed_ready_json",
+          "csv_export",
+          "markdown_report"
+        ],
+        "best_for": "intégration technique de flux structurés avec consommation plus intensive",
+        "scenario_limit": 100,
+        "report_frequency": "daily_or_intraday",
+        "default_daily_quota": 20,
+        "default_monthly_quota": 200,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle",
+          "admin",
+          "artifacts"
+        ]
+      }
+    ]
+  }
+}

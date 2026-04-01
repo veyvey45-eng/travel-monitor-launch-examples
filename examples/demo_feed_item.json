@@ -1,0 +1,24 @@
+{
+  "feed_rank": 1,
+  "opportunity_key": "group_644c57e536983898",
+  "destination_label": "Wooster, Ohio",
+  "entity_name": "Hampton Inn Wooster (Hotel)",
+  "checkin_date": "2026-04-15",
+  "checkout_date": "2026-04-16",
+  "currency": "USD",
+  "opportunity_type": "booking_parity_gap",
+  "opportunity_priority": "medium",
+  "opportunity_score": 48.82,
+  "recommended_offer_tier": "parity",
+  "market_leader_site": "trivago",
+  "best_price": 136.0,
+  "price_gap": 6.0,
+  "price_gap_percent": 4.41,
+  "booking_gap": 6.0,
+  "booking_gap_percent": 4.41,
+  "sites": [
+    "booking",
+    "trivago"
+  ],
+  "commercial_summary": "Booking.com is 6.00 USD above the best observed market rate for Hampton Inn Wooster (Hotel); best visible site: trivago at 136.00 USD."
+}

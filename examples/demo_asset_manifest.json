@@ -1,0 +1,33 @@
+{
+  "source_file": "/home/ubuntu/price-monitor-v1/data/travel_history/api_smoke_test_result.json",
+  "generated_assets": [
+    "demo_opportunities_feed_response.json",
+    "demo_feed_item.json",
+    "demo_top_opportunities_response.json",
+    "demo_delivery_bundle.json",
+    "demo_plan_catalog.json",
+    "demo_product_offers.json",
+    "demo_asset_manifest.json"
+  ],
+  "feed_summary": {
+    "feed_name": "travel_offer_intelligence_feed",
+    "count": 2,
+    "focus": "booking",
+    "tier_filter": "parity",
+    "average_score": 45.05,
+    "max_score": 48.82,
+    "destinations": [
+      "Wooster, Ohio"
+    ]
+  },
+  "first_demo_item": {
+    "entity_name": "Hampton Inn Wooster (Hotel)",
+    "destination_label": "Wooster, Ohio",
+    "opportunity_score": 48.82,
+    "best_price": 136.0,
+    "price_gap": 6.0,
+    "market_leader_site": "trivago"
+  },
+  "plan_count": 4,
+  "package_count": 4
+}

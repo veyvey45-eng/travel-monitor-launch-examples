@@ -1,0 +1,101 @@
+{
+  "count": 4,
+  "launch_stage": "multi_client_private_launch",
+  "items": [
+    {
+      "plan_key": "starter",
+      "label": "Starter",
+      "target_customer": "consultants et indépendants",
+      "delivery_mode": [
+        "json",
+        "csv",
+        "markdown_report"
+      ],
+      "best_for": "veille tarifaire simple sur un portefeuille réduit",
+      "scenario_limit": 10,
+      "report_frequency": "daily",
+      "default_daily_quota": 25,
+      "default_monthly_quota": 300,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "pro",
+      "label": "Pro",
+      "target_customer": "agences, analystes, petits revenue managers",
+      "delivery_mode": [
+        "json_feed",
+        "daily_report",
+        "alerts"
+      ],
+      "best_for": "veille concurrentielle multi-scénarios avec exports récurrents",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 80,
+      "default_monthly_quota": 2000,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "parity",
+      "label": "Parity",
+      "target_customer": "hôteliers et consultants distribution",
+      "delivery_mode": [
+        "parity_feed",
+        "parity_report",
+        "alerts"
+      ],
+      "best_for": "écarts OTA visibles et signaux de non-parité Booking versus marché",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 60,
+      "default_monthly_quota": 1500,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "api_plus",
+      "label": "API Plus",
+      "target_customer": "intégrateurs et équipes produit",
+      "delivery_mode": [
+        "rest_api",
+        "feed_ready_json",
+        "csv_export",
+        "markdown_report"
+      ],
+      "best_for": "intégration technique de flux structurés avec consommation plus intensive",
+      "scenario_limit": 100,
+      "report_frequency": "daily_or_intraday",
+      "default_daily_quota": 20,
+      "default_monthly_quota": 200,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle",
+        "admin",
+        "artifacts"
+      ]
+    }
+  ]
+}

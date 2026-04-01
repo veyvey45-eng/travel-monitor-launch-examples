@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-03-31T10:22:19Z",
+  "feed_name": "travel_offer_intelligence_feed",
+  "count": 2,
+  "summary": {
+    "opportunity_count": 2,
+    "destination_count": 1,
+    "destinations": [
+      "Wooster, Ohio"
+    ],
+    "average_score": 45.05,
+    "max_score": 48.82,
+    "critical_or_high_count": 0,
+    "booking_gap_count": 2,
+    "priority_mix": {
+      "medium": 2
+    },
+    "recommended_offer_mix": {
+      "parity": 2
+    },
+    "market_leader_mix": {
+      "trivago": 2
+    },
+    "focus": "booking",
+    "tier_filter": "parity"
+  },
+  "items": [
+    {
+      "feed_rank": 1,
+      "opportunity_key": "group_644c57e536983898",
+      "destination_label": "Wooster, Ohio",
+      "entity_name": "Hampton Inn Wooster (Hotel)",
+      "checkin_date": "2026-04-15",
+      "checkout_date": "2026-04-16",
+      "currency": "USD",
+      "opportunity_type": "booking_parity_gap",
+      "opportunity_priority": "medium",
+      "opportunity_score": 48.82,
+      "recommended_offer_tier": "parity",
+      "market_leader_site": "trivago",
+      "best_price": 136.0,
+      "price_gap": 6.0,
+      "price_gap_percent": 4.41,
+      "booking_gap": 6.0,
+      "booking_gap_percent": 4.41,
+      "sites": [
+        "booking",
+        "trivago"
+      ],
+      "commercial_summary": "Booking.com is 6.00 USD above the best observed market rate for Hampton Inn Wooster (Hotel); best visible site: trivago at 136.00 USD."
+    },
+    {
+      "feed_rank": 2,
+      "opportunity_key": "group_7e2c20db485675f2",
+      "destination_label": "Wooster, Ohio",
+      "entity_name": "Best Western Plus Wooster Hotel & Conference Center",
+      "checkin_date": "2026-04-15",
+      "checkout_date": "2026-04-16",
+      "currency": "USD",
+      "opportunity_type": "booking_parity_gap",
+      "opportunity_priority": "medium",
+      "opportunity_score": 41.28,
+      "recommended_offer_tier": "parity",
+      "market_leader_site": "trivago",
+      "best_price": 159.0,
+      "price_gap": 5.0,
+      "price_gap_percent": 3.14,
+      "booking_gap": 5.0,
+      "booking_gap_percent": 3.14,
+      "sites": [
+        "booking",
+        "trivago"
+      ],
+      "commercial_summary": "Booking.com is 5.00 USD above the best observed market rate for Best Western Plus Wooster Hotel & Conference Center; best visible site: trivago at 159.00 USD."
+    }
+  ],
+  "filters": {
+    "limit": 10,
+    "min_score": 20.0,
+    "focus": "booking",
+    "tier": "parity"
+  },
+  "access": {
+    "access_mode": "private_api_key",
+    "access_scope": "client_plan",
+    "client_id": "demo_api_plus",
+    "client_name": "Demo API Plus",
+    "plan_key": "api_plus",
+    "plan_label": "API Plus",
+    "endpoint_group": "feed",
+    "daily_quota_limit": 20,
+    "daily_quota_used": 3,
+    "daily_quota_remaining": 17,
+    "monthly_quota_limit": 200,
+    "monthly_quota_used": 3,
+    "monthly_quota_remaining": 197,
+    "usage_date": "2026-03-31",
+    "usage_month": "2026-03",
+    "key_hint": "***-key"
+  },
+  "product_catalog": {
+    "positioning": "travel_monitoring_specialized_intelligence",
+    "recommended_launch_offer": "hybrid_reports_alerts_limited_api",
+    "launch_stage": "client_ready_private_launch",
+    "private_access": {
+      "auth_mode": "x-api-key",
+      "auth_model": "per_client_api_keys",
+      "quota_window": [
+        "daily",
+        "monthly"
+      ],
+      "protected_endpoints": [
+        "/travel/opportunities/top",
+        "/travel/opportunities/feed",
+        "/travel/reports/top-opportunities",
+        "/travel/opportunities/feed/export.csv",
+        "/travel/reports/top-opportunities/export.md",
+        "/travel/delivery/bundle",
+        "/travel/admin/clients",
+        "/travel/admin/usage",
+        "/travel/admin/overview",
+        "/travel/admin/healing/overview",
+        "/travel/admin/healing/scenarios/{scenario_id}",
+        "/travel/admin/delivery/jobs",
+        "/travel/admin/delivery/jobs/{job_id}/run",
+        "/travel/admin/clients/{client_id}/artifacts/latest"
+      ],
+      "client_count": 3
+    },
+    "plan_catalog_endpoint": "/travel/plans",
+    "admin_endpoints": [
+      "/travel/admin/clients",
+      "/travel/admin/usage",
+      "/travel/admin/overview",
+      "/travel/admin/healing/overview",
+      "/travel/admin/healing/scenarios/{scenario_id}",
+      "/travel/admin/delivery/jobs",
+      "/travel/admin/delivery/jobs/{job_id}/run",
+      "/travel/admin/clients/{client_id}/artifacts/latest"
+    ],
+    "packages": [
+      {
+        "package_key": "starter",
+        "label": "Starter",
+        "target_customer": "consultants et indépendants",
+        "delivery_mode": [
+          "json",
+          "csv",
+          "markdown_report"
+        ],
+        "best_for": "veille tarifaire simple sur un portefeuille réduit",
+        "scenario_limit": 10,
+        "report_frequency": "daily",
+        "default_daily_quota": 25,
+        "default_monthly_quota": 300,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "pro",
+        "label": "Pro",
+        "target_customer": "agences, analystes, petits revenue managers",
+        "delivery_mode": [
+          "json_feed",
+          "daily_report",
+          "alerts"
+        ],
+        "best_for": "veille concurrentielle multi-scénarios avec exports récurrents",
+        "scenario_limit": 50,
+        "report_frequency": "daily",
+        "default_daily_quota": 80,
+        "default_monthly_quota": 2000,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "parity",
+        "label": "Parity",
+        "target_customer": "hôteliers et consultants distribution",
+        "delivery_mode": [
+          "parity_feed",
+          "parity_report",
+          "alerts"
+        ],
+        "best_for": "écarts OTA visibles et signaux de non-parité Booking versus marché",
+        "scenario_limit": 50,
+        "report_frequency": "daily",
+        "default_daily_quota": 60,
+        "default_monthly_quota": 1500,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle"
+        ]
+      },
+      {
+        "package_key": "api_plus",
+        "label": "API Plus",
+        "target_customer": "intégrateurs et équipes produit",
+        "delivery_mode": [
+          "rest_api",
+          "feed_ready_json",
+          "csv_export",
+          "markdown_report"
+        ],
+        "best_for": "intégration technique de flux structurés avec consommation plus intensive",
+        "scenario_limit": 100,
+        "report_frequency": "daily_or_intraday",
+        "default_daily_quota": 20,
+        "default_monthly_quota": 200,
+        "allowed_endpoint_groups": [
+          "top_opportunities",
+          "feed",
+          "reports",
+          "feed_export",
+          "report_export",
+          "delivery_bundle",
+          "admin",
+          "artifacts"
+        ]
+      }
+    ]
+  }
+}

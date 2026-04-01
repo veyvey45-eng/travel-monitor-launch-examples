@@ -1,0 +1,271 @@
+{
+  "positioning": "travel_monitoring_specialized_intelligence",
+  "recommended_launch_offer": "hybrid_reports_alerts_limited_api",
+  "launch_stage": "client_ready_private_launch",
+  "private_access": {
+    "auth_mode": "x-api-key",
+    "auth_model": "per_client_api_keys",
+    "quota_window": [
+      "daily",
+      "monthly"
+    ],
+    "protected_endpoints": [
+      "/travel/opportunities/top",
+      "/travel/opportunities/feed",
+      "/travel/reports/top-opportunities",
+      "/travel/opportunities/feed/export.csv",
+      "/travel/reports/top-opportunities/export.md",
+      "/travel/delivery/bundle",
+      "/travel/admin/clients",
+      "/travel/admin/usage",
+      "/travel/admin/overview",
+      "/travel/admin/healing/overview",
+      "/travel/admin/healing/scenarios/{scenario_id}",
+      "/travel/admin/delivery/jobs",
+      "/travel/admin/delivery/jobs/{job_id}/run",
+      "/travel/admin/clients/{client_id}/artifacts/latest"
+    ],
+    "client_count": 3
+  },
+  "plan_catalog_endpoint": "/travel/plans",
+  "admin_endpoints": [
+    "/travel/admin/clients",
+    "/travel/admin/usage",
+    "/travel/admin/overview",
+    "/travel/admin/healing/overview",
+    "/travel/admin/healing/scenarios/{scenario_id}",
+    "/travel/admin/delivery/jobs",
+    "/travel/admin/delivery/jobs/{job_id}/run",
+    "/travel/admin/clients/{client_id}/artifacts/latest"
+  ],
+  "packages": [
+    {
+      "package_key": "starter",
+      "label": "Starter",
+      "target_customer": "consultants et indépendants",
+      "delivery_mode": [
+        "json",
+        "csv",
+        "markdown_report"
+      ],
+      "best_for": "veille tarifaire simple sur un portefeuille réduit",
+      "scenario_limit": 10,
+      "report_frequency": "daily",
+      "default_daily_quota": 25,
+      "default_monthly_quota": 300,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "package_key": "pro",
+      "label": "Pro",
+      "target_customer": "agences, analystes, petits revenue managers",
+      "delivery_mode": [
+        "json_feed",
+        "daily_report",
+        "alerts"
+      ],
+      "best_for": "veille concurrentielle multi-scénarios avec exports récurrents",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 80,
+      "default_monthly_quota": 2000,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "package_key": "parity",
+      "label": "Parity",
+      "target_customer": "hôteliers et consultants distribution",
+      "delivery_mode": [
+        "parity_feed",
+        "parity_report",
+        "alerts"
+      ],
+      "best_for": "écarts OTA visibles et signaux de non-parité Booking versus marché",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 60,
+      "default_monthly_quota": 1500,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "package_key": "api_plus",
+      "label": "API Plus",
+      "target_customer": "intégrateurs et équipes produit",
+      "delivery_mode": [
+        "rest_api",
+        "feed_ready_json",
+        "csv_export",
+        "markdown_report"
+      ],
+      "best_for": "intégration technique de flux structurés avec consommation plus intensive",
+      "scenario_limit": 100,
+      "report_frequency": "daily_or_intraday",
+      "default_daily_quota": 20,
+      "default_monthly_quota": 200,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle",
+        "admin",
+        "artifacts"
+      ]
+    }
+  ],
+  "usage_state_path": "/home/ubuntu/price-monitor-v1/data/travel_history/api_smoke_test_usage_state.json",
+  "clients_state_path": "/home/ubuntu/price-monitor-v1/data/travel_history/api_smoke_test_clients.json",
+  "plans": [
+    {
+      "plan_key": "starter",
+      "label": "Starter",
+      "target_customer": "consultants et indépendants",
+      "delivery_mode": [
+        "json",
+        "csv",
+        "markdown_report"
+      ],
+      "best_for": "veille tarifaire simple sur un portefeuille réduit",
+      "scenario_limit": 10,
+      "report_frequency": "daily",
+      "default_daily_quota": 25,
+      "default_monthly_quota": 300,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "pro",
+      "label": "Pro",
+      "target_customer": "agences, analystes, petits revenue managers",
+      "delivery_mode": [
+        "json_feed",
+        "daily_report",
+        "alerts"
+      ],
+      "best_for": "veille concurrentielle multi-scénarios avec exports récurrents",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 80,
+      "default_monthly_quota": 2000,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "parity",
+      "label": "Parity",
+      "target_customer": "hôteliers et consultants distribution",
+      "delivery_mode": [
+        "parity_feed",
+        "parity_report",
+        "alerts"
+      ],
+      "best_for": "écarts OTA visibles et signaux de non-parité Booking versus marché",
+      "scenario_limit": 50,
+      "report_frequency": "daily",
+      "default_daily_quota": 60,
+      "default_monthly_quota": 1500,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle"
+      ]
+    },
+    {
+      "plan_key": "api_plus",
+      "label": "API Plus",
+      "target_customer": "intégrateurs et équipes produit",
+      "delivery_mode": [
+        "rest_api",
+        "feed_ready_json",
+        "csv_export",
+        "markdown_report"
+      ],
+      "best_for": "intégration technique de flux structurés avec consommation plus intensive",
+      "scenario_limit": 100,
+      "report_frequency": "daily_or_intraday",
+      "default_daily_quota": 20,
+      "default_monthly_quota": 200,
+      "allowed_endpoint_groups": [
+        "top_opportunities",
+        "feed",
+        "reports",
+        "feed_export",
+        "report_export",
+        "delivery_bundle",
+        "admin",
+        "artifacts"
+      ]
+    }
+  ],
+  "healing_capabilities": {
+    "heuristic_pipeline": true,
+    "llm_repair_available": false,
+    "visual_repair_available": true,
+    "admin_overview_endpoint": "/travel/admin/overview",
+    "admin_healing_overview_endpoint": "/travel/admin/healing/overview",
+    "admin_healing_scenario_endpoint": "/travel/admin/healing/scenarios/{scenario_id}"
+  },
+  "client_summaries": [
+    {
+      "client_id": "demo_api_plus",
+      "display_name": "Demo API Plus",
+      "plan_key": "api_plus",
+      "status": "active",
+      "daily_quota": 20,
+      "monthly_quota": 200
+    },
+    {
+      "client_id": "demo_parity_hotel",
+      "display_name": "Demo Parity Hotel",
+      "plan_key": "parity",
+      "status": "active",
+      "daily_quota": 60,
+      "monthly_quota": 1500
+    },
+    {
+      "client_id": "demo_pro_agency",
+      "display_name": "Demo Pro Agency",
+      "plan_key": "pro",
+      "status": "active",
+      "daily_quota": 80,
+      "monthly_quota": 2000
+    }
+  ]
+}
