@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+  <rect width="1400" height="980" fill="#0f172a" />
+  <rect x="34" y="34" width="1332" height="912" rx="28" fill="#111827" stroke="#334155" stroke-width="2" />
+  <text x="70" y="95" font-size="26" fill="#38bdf8" font-family="Inter,Arial,sans-serif" font-weight="700">Travel Monitor Launch — Quickstart visibility asset</text>
+  <text x="70" y="145" font-size="48" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">First success in less than a minute</text>
+  <text x="70" y="190" font-size="24" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">A minimal evaluation flow for travel teams, analysts, consultants and AI builders.</text>
+  
+            <circle cx="120" cy="210" r="34" fill="#22c55e" />
+            <text x="120" y="221" text-anchor="middle" font-size="28" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-weight="800">1</text>
+            <rect x="185" y="172" width="1090" height="90" rx="18" fill="#1f2937" stroke="#334155" />
+            <text x="215" y="202" font-size="28" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">Open the Apify Actor page</text>
+            <text x="215" y="236" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Use the public Store page as the main entry point for evaluation.</text>
+            <line x1="120" y1="245" x2="120" y2="302" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+            <circle cx="120" cy="340" r="34" fill="#22c55e" />
+            <text x="120" y="351" text-anchor="middle" font-size="28" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-weight="800">2</text>
+            <rect x="185" y="302" width="1090" height="90" rx="18" fill="#1f2937" stroke="#334155" />
+            <text x="215" y="332" font-size="28" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">Run /health</text>
+            <text x="215" y="366" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Confirm the Actor is awake and reachable with your Apify token.</text>
+            <line x1="120" y1="375" x2="120" y2="432" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+            <circle cx="120" cy="470" r="34" fill="#22c55e" />
+            <text x="120" y="481" text-anchor="middle" font-size="28" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-weight="800">3</text>
+            <rect x="185" y="432" width="1090" height="90" rx="18" fill="#1f2937" stroke="#334155" />
+            <text x="215" y="462" font-size="28" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">Run /travel/opportunities/feed</text>
+            <text x="215" y="496" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Retrieve the ranked opportunities feed through a callable endpoint.</text>
+            <line x1="120" y1="505" x2="120" y2="562" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+            <circle cx="120" cy="600" r="34" fill="#22c55e" />
+            <text x="120" y="611" text-anchor="middle" font-size="28" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-weight="800">4</text>
+            <rect x="185" y="562" width="1090" height="90" rx="18" fill="#1f2937" stroke="#334155" />
+            <text x="215" y="592" font-size="28" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">Compare with sample JSON</text>
+            <text x="215" y="626" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Validate the response against the demo payload and understand the output structure.</text>
+            <line x1="120" y1="635" x2="120" y2="692" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+            <circle cx="120" cy="730" r="34" fill="#22c55e" />
+            <text x="120" y="741" text-anchor="middle" font-size="28" fill="#0f172a" font-family="Inter,Arial,sans-serif" font-weight="800">5</text>
+            <rect x="185" y="692" width="1090" height="90" rx="18" fill="#1f2937" stroke="#334155" />
+            <text x="215" y="722" font-size="28" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-weight="800">Reuse in workflow</text>
+            <text x="215" y="756" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Plug the signal into reporting, pricing review, or AI enrichment workflows.</text>
+            
+  <rect x="70" y="865" width="1260" height="48" rx="16" fill="#1f2937" stroke="#334155" />
+  <text x="95" y="897" font-size="20" fill="#cbd5e1" font-family="Inter,Arial,sans-serif">Main CTA: View the Actor on Apify, replay the flow, then compare the response with the sample payload in the examples repository.</text>
+</svg>

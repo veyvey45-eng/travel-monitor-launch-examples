@@ -18,6 +18,17 @@ Le rôle principal de ce dépôt n’est pas de remplacer la documentation compl
 
 > **Short promise:** Monitor hotel pricing and parity signals through a standby-ready Apify API, then reuse structured outputs in reporting, analytics, or AI workflows.
 
+| Quick link | Purpose |
+|---|---|
+| **Apify Actor page** | https://apify.com/travelmonitorlab/travel-monitor-launch?utm_source=github&utm_medium=docs&utm_campaign=launch_april_2026 |
+| **First success guide** | `docs/first_success_under_1_minute.md` |
+| **Example payload** | `examples/demo_feed_item.json` |
+| **Annotated signal asset** | `assets/annotated_feed_item.svg` |
+| **First success visual** | `assets/annotated_first_success_flow.svg` |
+
+![Annotated first success flow](assets/annotated_first_success_flow.svg)
+
+
 | Audience prioritaire | Bénéfice attendu |
 |---|---|
 | **Revenue managers** | Voir rapidement des écarts OTA visibles et des opportunités tarifaires |
@@ -49,8 +60,8 @@ travel-monitor-launch-examples/
 │   ├── integration_scenarios.md
 │   └── outbound_payload_examples.md
 └── assets/
-    ├── annotated_feed_item.png
-    └── annotated_first_success_flow.png
+    ├── annotated_feed_item.svg
+    └── annotated_first_success_flow.svg
 ```
 
 ## First success in less than a minute
@@ -87,6 +98,12 @@ curl -H "Authorization: Bearer <YOUR_APIFY_TOKEN>" \
   "https://travelmonitorlab--travel-monitor-launch.apify.actor/travel/plans"
 ```
 
+## Visual first-success flow
+
+Le dépôt inclut désormais un **visuel réutilisable** du parcours d’évaluation le plus simple. Il peut être repris tel quel dans un post social, un tutoriel court, une page communauté ou un message d’outreach léger.
+
+![Annotated first success flow](assets/annotated_first_success_flow.svg)
+
 ## Real example payload
 
 L’exemple ci-dessous provient d’une sortie réelle déjà extraite du smoke test. Il est volontairement court, car il doit servir de **preuve de valeur immédiate** dans le dépôt, dans les messages d’outreach et dans les futures publications.
@@ -114,6 +131,8 @@ L’exemple ci-dessous provient d’une sortie réelle déjà extraite du smoke 
   "commercial_summary": "Booking.com is 6.00 USD above the best observed market rate for Hampton Inn Wooster (Hotel); best visible site: trivago at 136.00 USD."
 }
 ```
+
+![Annotated opportunity signal](assets/annotated_feed_item.svg)
 
 | Champ clé | Pourquoi il compte |
 |---|---|
@@ -177,8 +196,8 @@ Le dépôt sera beaucoup plus efficace si le README renvoie vers quelques docume
 | `docs/first_success_under_1_minute.md` | Rendre l’essai reproductible très rapidement |
 | `docs/integration_scenarios.md` | Montrer comment réutiliser les sorties |
 | `docs/outbound_payload_examples.md` | Offrir une base de partage commercial claire |
-| `assets/annotated_feed_item.png` | Fournir une preuve visuelle immédiatement compréhensible |
-| `assets/annotated_first_success_flow.png` | Rassurer sur la simplicité du parcours d’essai |
+| `assets/annotated_feed_item.svg` | Fournir une preuve visuelle immédiatement compréhensible |
+| `assets/annotated_first_success_flow.svg` | Rassurer sur la simplicité du parcours d’essai |
 
 ## Final note for publication
 
