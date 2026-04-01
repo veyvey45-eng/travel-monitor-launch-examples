@@ -1,6 +1,6 @@
 ## Travel Monitor Launch — Examples Repository
 
-Ce document est conçu comme **README maître** pour un futur dépôt GitHub public d’exemples autour de votre Actor Apify. Son objectif est double. D’une part, il sert de **surface de découvrabilité hors Store** pour les profils techniques et semi-techniques. D’autre part, il réduit le **time to first success** en donnant un chemin d’essai extrêmement simple, adossé à des sorties réelles déjà extraites de l’API.
+Ce document sert de **README maître** pour le dépôt GitHub public d’exemples autour de votre Actor Apify. Son objectif est double. D’une part, il agit comme une **surface de découvrabilité hors Store** pour les profils techniques et semi-techniques. D’autre part, il réduit le **time to first success** en donnant un chemin d’essai extrêmement simple, adossé à des sorties réelles déjà extraites de l’API.
 
 Le positionnement retenu reste volontairement précis. Le produit n’est pas présenté comme une API travel générique, mais comme une **API de monitoring tarifaire hôtelier** et de **price parity intelligence** exposée via Apify, avec des sorties prêtes à être réutilisées dans des workflows de **travel operations**, de **pricing analysis**, de **reporting**, ou d’**agents IA**.
 
@@ -106,7 +106,7 @@ Le dépôt inclut désormais un **visuel réutilisable** du parcours d’évalua
 
 ## Real example payload
 
-L’exemple ci-dessous provient d’une sortie réelle déjà extraite du smoke test. Il est volontairement court, car il doit servir de **preuve de valeur immédiate** dans le dépôt, dans les messages d’outreach et dans les futures publications.
+L’exemple ci-dessous provient d’une sortie réelle déjà extraite du smoke test. Il est volontairement court, car il sert de **preuve de valeur immédiate** dans le dépôt, dans les messages d’outreach et dans les publications externes.
 
 ```json
 {
@@ -203,4 +203,4 @@ Le dépôt sera beaucoup plus efficace si le README renvoie vers quelques docume
 
 Une fois publié, ce dépôt doit être utilisé comme **actif pivot** entre la fiche Apify, les posts sociaux, les messages d’outreach et les communautés techniques. Sa réussite ne viendra pas d’un grand volume de texte, mais de sa capacité à **prouver rapidement la valeur**, à **réduire la friction** et à **renvoyer proprement vers la fiche Store**.
 
-Le prochain bloc logique consiste à produire immédiatement les documents et fichiers complémentaires suivants : le **guide “first success under 1 minute”**, le **dossier de snippets**, le **pack d’outreach**, puis les **supports de publication par canal**.
+Le dépôt contient déjà le **guide “first success under 1 minute”**, le **dossier de snippets** et les **actifs visuels** nécessaires pour un premier cycle de diffusion. Le bloc suivant consiste surtout à relayer ce même noyau de preuve sur les canaux externes et dans les communautés ciblées.
