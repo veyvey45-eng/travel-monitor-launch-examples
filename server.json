@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.veyvey45-eng/travel-monitor-launch",
+  "title": "Hotel Rate Monitoring API via Apify MCP",
+  "description": "Remote MCP entry for the Travel Monitor Launch Actor on Apify. It exposes focused Actor discovery, documentation access, and the Hotel Rate Monitoring API tool through Apify's hosted MCP server for hotel rate monitoring, pricing intelligence, and AI-agent workflows.",
+  "repository": {
+    "url": "https://github.com/veyvey45-eng/travel-monitor-launch-examples",
+    "source": "github"
+  },
+  "version": "0.4.20",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=actors,docs,travelmonitorlab/travel-monitor-launch"
+    }
+  ]
+}

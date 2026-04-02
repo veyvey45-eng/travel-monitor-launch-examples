@@ -23,6 +23,8 @@ Le rôle principal de ce dépôt n’est pas de remplacer la documentation compl
 | **Apify Actor page** | https://apify.com/travelmonitorlab/travel-monitor-launch?utm_source=github&utm_medium=docs&utm_campaign=launch_april_2026 |
 | **First success guide** | `docs/first_success_under_1_minute.md` |
 | **AI agents quickstart** | `docs/ai_agents_mcp_quickstart.md` |
+| **MCP registry manifest** | `server.json` |
+| **MCP publication notes** | `docs/mcp_registry_and_directory_next_steps.md` |
 | **OpenAPI file** | `openapi/travel-monitor-launch.openapi.json` |
 | **Example payload** | `examples/demo_feed_item.json` |
 | **Annotated signal asset** | `assets/annotated_feed_item.svg` |
@@ -45,6 +47,7 @@ La structure ci-dessous est pensée pour rendre le dépôt immédiatement lisibl
 ```text
 travel-monitor-launch-examples/
 ├── README.md
+├── server.json
 ├── snippets/
 │   ├── health_check.sh
 │   ├── opportunities_feed.sh
@@ -60,6 +63,7 @@ travel-monitor-launch-examples/
 ├── docs/
 │   ├── first_success_under_1_minute.md
 │   ├── ai_agents_mcp_quickstart.md
+│   ├── mcp_registry_and_directory_next_steps.md
 │   ├── integration_scenarios.md
 │   └── outbound_payload_examples.md
 ├── openapi/
@@ -111,6 +115,7 @@ Cette surface GitHub doit maintenant jouer un rôle très simple. Elle aide un l
 |---|---|---|
 | **Premier essai humain** | Fiche Apify + `docs/first_success_under_1_minute.md` | Rejouer le chemin `/health` puis `/travel/opportunities/feed` sans friction inutile |
 | **Builders IA / MCP** | `docs/ai_agents_mcp_quickstart.md` | Comprendre l’ordre d’appel agentique et la logique health → feed → export |
+| **Registry / directory publication** | `server.json` + `docs/mcp_registry_and_directory_next_steps.md` | Préparer une découvrabilité MCP au-delà d’Apify sans redéployer un serveur séparé |
 | **Développeurs API** | `openapi/travel-monitor-launch.openapi.json` | Inspecter rapidement la surface d’API et les routes disponibles |
 | **Workflows analytics / reporting** | `examples/` + `snippets/` | Réutiliser des payloads réels et des appels copiables |
 
@@ -122,6 +127,8 @@ Le dépôt expose désormais la **spécification OpenAPI** utilisée par l’Act
 
 | Asset | Purpose |
 |---|---|
+| `server.json` | Manifeste MCP distant prêt pour un référencement registre/annuaire |
+| `docs/mcp_registry_and_directory_next_steps.md` | Décide où publier ensuite la couche MCP sans redéploiement inutile |
 | `openapi/travel-monitor-launch.openapi.json` | Contrat de routes pour lecture développeur, génération client ou revue technique |
 | `snippets/health_check.sh` | Test liveness minimal |
 | `snippets/opportunities_feed.sh` | Premier appel métier démonstratif |
@@ -225,6 +232,8 @@ Le dépôt sera beaucoup plus efficace si le README renvoie vers quelques docume
 |---|---|
 | `docs/first_success_under_1_minute.md` | Rendre l’essai reproductible très rapidement |
 | `docs/ai_agents_mcp_quickstart.md` | Exposer un chemin d’usage clair pour MCP et agents IA |
+| `server.json` | Fournir un manifeste MCP distant publiable pour le registre et certains annuaires |
+| `docs/mcp_registry_and_directory_next_steps.md` | Clarifier les meilleurs endroits supplémentaires où publier la couche MCP |
 | `openapi/travel-monitor-launch.openapi.json` | Donner un contrat d’API exploitable aux intégrateurs |
 | `docs/integration_scenarios.md` | Montrer comment réutiliser les sorties |
 | `docs/outbound_payload_examples.md` | Offrir une base de partage commercial claire |
