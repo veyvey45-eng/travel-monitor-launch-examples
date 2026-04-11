@@ -237,8 +237,22 @@ Le dépôt sera beaucoup plus efficace si le README renvoie vers quelques docume
 | `openapi/travel-monitor-launch.openapi.json` | Donner un contrat d’API exploitable aux intégrateurs |
 | `docs/integration_scenarios.md` | Montrer comment réutiliser les sorties |
 | `docs/outbound_payload_examples.md` | Offrir une base de partage commercial claire |
+| `docs/privacy_policy.md` | Fournir une politique de confidentialité publique pour les annuaires et la conformité |
+| `docs/support.md` | Exposer un canal de support public pour l’onboarding et les questions d’intégration |
 | `assets/annotated_feed_item.svg` | Fournir une preuve visuelle immédiatement compréhensible |
 | `assets/annotated_first_success_flow.svg` | Rassurer sur la simplicité du parcours d’essai |
+
+## Support, privacy, and directory readiness
+
+Pour une diffusion plus large sur les annuaires MCP et les environnements assistants, le dépôt expose désormais un **canal de support public** et une **politique de confidentialité publique**. Ces éléments ne remplacent pas les politiques des plateformes tierces utilisées par le service, mais ils réduisent l’ambiguïté pour les reviewers, les utilisateurs de clients MCP et les annuaires qui examinent la qualité de préparation du projet.
+
+| Need | Public resource |
+|---|---|
+| **Support channel** | `docs/support.md` |
+| **Privacy policy** | `docs/privacy_policy.md` |
+| **MCP manifest** | `server.json` |
+| **Quickstart with examples** | `docs/first_success_under_1_minute.md` |
+| **AI/MCP onboarding** | `docs/ai_agents_mcp_quickstart.md` |
 
 ## Final note for publication
 
