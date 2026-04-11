@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.veyvey45-eng/hotel-rate-monitoring-api",
+  "name": "io.github.veyvey45-eng/travel-monitor-launch",
   "title": "Hotel Rate Monitoring API",
   "description": "Remote MCP server for hotel rate monitoring, parity checks, and pricing intelligence via Apify.",
   "repository": {
