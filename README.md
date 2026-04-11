@@ -25,6 +25,7 @@ Le rôle principal de ce dépôt n’est pas de remplacer la documentation compl
 | **AI agents quickstart** | `docs/ai_agents_mcp_quickstart.md` |
 | **MCP registry manifest** | `server.json` |
 | **MCP publication notes** | `docs/mcp_registry_and_directory_next_steps.md` |
+| **Claude review readiness** | `docs/claude_review_readiness.md` |
 | **OpenAPI file** | `openapi/travel-monitor-launch.openapi.json` |
 | **Example payload** | `examples/demo_feed_item.json` |
 | **Annotated signal asset** | `assets/annotated_feed_item.svg` |
@@ -63,6 +64,7 @@ travel-monitor-launch-examples/
 ├── docs/
 │   ├── first_success_under_1_minute.md
 │   ├── ai_agents_mcp_quickstart.md
+│   ├── claude_review_readiness.md
 │   ├── mcp_registry_and_directory_next_steps.md
 │   ├── integration_scenarios.md
 │   └── outbound_payload_examples.md
@@ -134,6 +136,7 @@ Le dépôt expose désormais la **spécification OpenAPI** utilisée par l’Act
 | `snippets/opportunities_feed.sh` | Premier appel métier démonstratif |
 | `examples/demo_opportunities_feed_response.json` | Réponse réaliste pour intégration ou comparaison |
 | `docs/ai_agents_mcp_quickstart.md` | Pont direct entre le dépôt GitHub et l’usage MCP / agents IA |
+| `docs/claude_review_readiness.md` | Note orientée revue Anthropic avec auth, support, privacy et preuves publiques |
 
 ## Visual first-success flow
 
