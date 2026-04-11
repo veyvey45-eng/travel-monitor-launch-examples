@@ -1,8 +1,8 @@
-## Travel Monitor Launch — Examples Repository
+## Hotel Rate Monitoring API — Examples Repository
 
-Ce document sert de **README maître** pour le dépôt GitHub public d’exemples autour de votre Actor Apify. Son objectif est double. D’une part, il agit comme une **surface de découvrabilité hors Store** pour les profils techniques et semi-techniques. D’autre part, il réduit le **time to first success** en donnant un chemin d’essai extrêmement simple, adossé à des sorties réelles déjà extraites de l’API.
+Ce document sert de **README maître** pour le dépôt GitHub public d’exemples autour de **Hotel Rate Monitoring API** sur Apify. Son objectif est double. D’une part, il agit comme une **surface de découvrabilité hors Store** pour les profils techniques et semi-techniques. D’autre part, il réduit le **time to first success** en donnant un chemin d’essai extrêmement simple, adossé à des sorties réelles déjà extraites de l’API.
 
-Le positionnement retenu reste volontairement précis. Le produit n’est pas présenté comme une API travel générique, mais comme une **API de monitoring tarifaire hôtelier** et de **price parity intelligence** exposée via Apify, avec des sorties prêtes à être réutilisées dans des workflows de **travel operations**, de **pricing analysis**, de **reporting**, ou d’**agents IA**.
+Le positionnement retenu reste volontairement précis. Le produit n’est pas présenté comme une API travel générique, mais comme une **API de monitoring tarifaire hôtelier** et de **price parity intelligence** exposée via Apify, avec des sorties prêtes à être réutilisées dans des workflows de **travel operations**, de **pricing analysis**, de **reporting**, ou d’**agents IA**. Le nom marketing privilégié pour la découvrabilité publique est **Hotel Rate Monitoring API**, tandis que le slug technique de l’Actor reste `travel-monitor-launch`.
 
 | Ce dépôt doit aider à faire | Pourquoi c’est utile commercialement |
 |---|---|

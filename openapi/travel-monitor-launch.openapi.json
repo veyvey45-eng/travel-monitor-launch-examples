@@ -1,14 +1,14 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Travel Monitor Launch API",
+    "title": "Hotel Rate Monitoring API",
     "version": "0.4.0",
-    "description": "API privée B2B pour monitoring travel multi-client, opportunités tarifaires, bundles de livraison, administration et distribution planifiée."
+    "description": "B2B API for hotel rate monitoring, pricing opportunities, delivery bundles, administration, and automation-ready travel pricing workflows."
   },
   "servers": [
     {
       "url": "/",
-      "description": "Serveur web embarqué de l'Actor Travel"
+      "description": "Embedded standby web server for the Apify Actor"
     }
   ],
   "paths": {

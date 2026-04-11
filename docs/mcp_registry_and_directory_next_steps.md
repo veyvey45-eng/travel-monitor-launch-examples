@@ -5,7 +5,7 @@
 
 ## Why this file exists
 
-This repository now includes a dedicated **`server.json`** manifest for the **Travel Monitor Launch** MCP entry. The goal is to make the project easier to publish beyond the Apify Store and beyond plain README documentation.
+This repository now includes a dedicated **`server.json`** manifest for the **Hotel Rate Monitoring API** MCP entry. The goal is to make the project easier to publish beyond the Apify Store and beyond plain README documentation.
 
 The project already benefits from **Apify's hosted MCP server** at `https://mcp.apify.com`, which means a separate MCP server deployment is **not required** just to make this Actor usable from MCP-compatible clients. The next layer is **discoverability**: publishing or submitting this MCP entry to the most credible directories.
 
